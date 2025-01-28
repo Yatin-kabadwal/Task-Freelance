@@ -8,6 +8,6 @@ class TabsPagerAdapter(activity: AppCompatActivity) : FragmentStateAdapter(activ
     override fun getItemCount(): Int = 3
 
     override fun createFragment(position: Int): Fragment {
-        return LinksFragment.newInstance(position) // Now it works correctly
+        return LinksFragment()
     }
 }
